@@ -23,46 +23,65 @@
 
 
     <main>
-
+        <div id="fullsize">
+            <button onclick="prevImage()">‹</button>
+            <img src="" alt="img attaque mstr" class="slider-image" id="currentImage"">
+            <button onclick="nextImage()">›</button>
+        </div>
         <div>
-            <h3>Pokemon</h3>
-            <img src="./img/pkmn1.png" alt="img pokemon">
-            <img src="./img/pkmn2.png" alt="img pokemon">
-            <img src="./img/pkmn3.png" alt="img pokemon">
+            <h1>2021-2022</h1>
+            <div>
+                <h2>Attaque de monstre</h2>
+                <div class="slider-container">
+                    <button onclick="prevImage()">‹</button>
+                    <img src="./img/attaqueDeMstr1.png" alt="img attaque mstr" class="slider-image" id="currentImage" onclick="zoom(this)">
+                    <button onclick="nextImage()">›</button>
+                </div>
+            </div>
+
+            <div>
+                <h3>Pokemon</h3>
+                <img src="./img/pkmn1.png" alt="img pokemon">
+                <img src="./img/pkmn2.png" alt="img pokemon">
+                <img src="./img/pkmn3.png" alt="img pokemon">
+            </div>
         </div>
 
         <div>
-            <h2>Attaque de monstre</h2>
-            <img src="./img/attaqueDeMstr1.png" alt="img attaque mstr">
-            <img src="./img/attaqueDeMstr2.png" alt="img attaque mstr">
-            <img src="./img/attaqueDeMstr3.png" alt="img attaque mstr">
-            <img src="./img/attaqueDeMstr4.png" alt="img attaque mstr">
+            <h1>2022-2023</h1>
+            <div>
+                <h2>Faux site de vente d'albums</h2>
+                <img src="./img/site.png" alt="img site">
+                <img src="./img/sitePanier.png" alt="img site">
+            </div>
+            <div>
+                <h2>Figurine star wars</h2>
+                <img src="./img/figurineSW1.png" alt="img sw">
+                <img src="./img/figurineSW2.png" alt="img sw">
+                <img src="./img/figurineSW3.png" alt="img sw">
+                <video controls width="250">
+                    <source src="./img/VideoPromoBoutiqueSW.mp4" type="video/webm" />
+                  
+                    <source src="./img/VideoPromoBoutiqueSW.mp4" type="video/mp4" />
+                </video>
+            </div>
         </div>
 
         <div>
-            <h2>Figurine star wars</h2>
-            <img src="./img/figurineSW1.png" alt="img sw">
-            <img src="./img/figurineSW2.png" alt="img sw">
-            <img src="./img/figurineSW3.png" alt="img sw">
-            <video controls width="250">
-                <source src="./img/VideoPromoBoutiqueSW.mp4" type="video/webm" />
-              
-                <source src="./img/VideoPromoBoutiqueSW.mp4" type="video/mp4" />
-            </video>
-        </div>
+            <h1>2023-2024</h1>
+            <div>
+                <h2>IWW</h2>
+                <img src="./img/IWW1.png" alt="img iww">
+                <img src="./img/IWW2.png" alt="img iww">
+                <img src="./img/IWW3.png" alt="img iww">
+                <img src="./img/IWW4.png" alt="img iww">
+            </div>
 
-        <div>
-            <h2>IWW</h2>
-            <img src="./img/IWW1.png" alt="img iww">
-            <img src="./img/IWW2.png" alt="img iww">
-            <img src="./img/IWW3.png" alt="img iww">
-            <img src="./img/IWW4.png" alt="img iww">
-        </div>
-
-        <div>
-            <h2>Faux site de vente d'albums</h2>
-            <img src="./img/site.png" alt="img site">
-            <img src="./img/sitePanier.png" alt="img site">
+            <div>
+                <h2>Projets en cours</h2>
+                <h3>Site en html/css/js hébergeant 3 jeux</h3>
+                <h3>Jeux en babylon.js pour le Games On Web 2024</h3>
+            </div>
         </div>
 
     </main>
@@ -72,6 +91,8 @@
 
 
     </footer>
+
+   <script src="./js/index.js"></script> 
 
 </body>
 
