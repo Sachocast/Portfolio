@@ -24,37 +24,41 @@
 
     <main>
         <div id="fullsize">
-            <button onclick="prevImage()">‹</button>
-            <img src="" alt="img slider" class="slider-image" id="">
-            <button onclick="nextImage()">›</button>
+            <button id="quit" onclick="quit()"><img src="./img/croix.png" alt="x"></button>
+            <button class="buttonSlider" id="fullsizePrev">‹</button>
+            <img src="" alt="img slider" class="slider-image" >
+            <button class="buttonSlider" id="fullsizeNext">›</button>
         </div>
         <div>
             <h1>2021-2022</h1>
             <div id="attMstr">
                 <h2>Attaque de monstre</h2>
                 <div class="slider-container">
-                    <button onclick="prevImage('attMstr')">‹</button>
-                    <img src="./img/attaqueDeMstr1.png" alt="img attaque mstr" class="slider-image"  onclick="zoom(this)">
-                    <button onclick="nextImage('attMstr')">›</button>
+                    <button class="buttonSlider" onclick="prevImage('attMstr')">‹</button>
+                    <img src="./img/attaqueDeMstr1.png" alt="img attaque mstr" class="slider-image"  onclick="zoom('attMstr')">
+                    <button class="buttonSlider" onclick="nextImage('attMstr')">›</button>
                 </div>
             </div>
 
             <div id="pkmn">
-                <h3>Pokemon</h3>
+                <h2>Pokemon</h2>
                 <div class="slider-container">
-                    <button onclick="prevImage('pkmn')">‹</button>
-                    <img src="./img/pkmn1.png" alt="img pokemon" class="slider-image" id="pkmn" onclick="zoom(this)">
-                    <button onclick="nextImage('pkmn')">›</button>
+                    <button class="buttonSlider" onclick="prevImage('pkmn')">‹</button>
+                    <img src="./img/pkmn1.png" alt="img pokemon" class="slider-image" id="pkmn" onclick="zoom('pkmn')">
+                    <button class="buttonSlider" onclick="nextImage('pkmn')">›</button>
                 </div>
             </div>
         </div>
 
         <div>
             <h1>2022-2023</h1>
-            <div>
+            <div id="albums">
                 <h2>Faux site de vente d'albums</h2>
-                <img src="./img/site.png" alt="img site">
-                <img src="./img/sitePanier.png" alt="img site">
+                <div class="slider-container">
+                    <button class="buttonSlider" onclick="prevImage('albums')">‹</button>
+                    <img src="./img/site.png" alt="img site" class="slider-image" id="albums" onclick="zoom('albums')">
+                    <button class="buttonSlider" onclick="nextImage('albums')">›</button>
+                </div>
             </div>
             <div>
                 <h2>Figurine star wars</h2>
