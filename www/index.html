@@ -25,25 +25,27 @@
     <main>
         <div id="fullsize">
             <button onclick="prevImage()">‹</button>
-            <img src="" alt="img attaque mstr" class="slider-image" id="currentImage"">
+            <img src="" alt="img slider" class="slider-image" id="">
             <button onclick="nextImage()">›</button>
         </div>
         <div>
             <h1>2021-2022</h1>
-            <div>
+            <div id="attMstr">
                 <h2>Attaque de monstre</h2>
                 <div class="slider-container">
-                    <button onclick="prevImage()">‹</button>
-                    <img src="./img/attaqueDeMstr1.png" alt="img attaque mstr" class="slider-image" id="currentImage" onclick="zoom(this)">
-                    <button onclick="nextImage()">›</button>
+                    <button onclick="prevImage('attMstr')">‹</button>
+                    <img src="./img/attaqueDeMstr1.png" alt="img attaque mstr" class="slider-image"  onclick="zoom(this)">
+                    <button onclick="nextImage('attMstr')">›</button>
                 </div>
             </div>
 
-            <div>
+            <div id="pkmn">
                 <h3>Pokemon</h3>
-                <img src="./img/pkmn1.png" alt="img pokemon">
-                <img src="./img/pkmn2.png" alt="img pokemon">
-                <img src="./img/pkmn3.png" alt="img pokemon">
+                <div class="slider-container">
+                    <button onclick="prevImage('pkmn')">‹</button>
+                    <img src="./img/pkmn1.png" alt="img pokemon" class="slider-image" id="pkmn" onclick="zoom(this)">
+                    <button onclick="nextImage('pkmn')">›</button>
+                </div>
             </div>
         </div>
 
