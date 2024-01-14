@@ -1,0 +1,66 @@
+
+img,video{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    width: 600px;
+    height: 270px;
+    object-fit: scale-down;
+}
+
+img{
+    cursor : zoom-in;
+
+}
+
+.slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSlider{
+    width: 50px;
+    height: 50px;
+}
+
+#fullsize{
+    z-index: 999;
+    display: none;
+    top: 16%;
+    left: 16%;
+    width: 65%;
+    height: 65%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+#fullsize>img{
+    width: 50%;
+    height: 100%;
+    border: 0;
+    cursor: initial;
+}
+
+#quit>img{
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: initial;
+}
+
+#quit{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background: none;
+    border: none;
+}
+
+#quit:hover {
+    background-color: red;
+}

@@ -163,6 +163,7 @@ function prevImage(idDiv,fullsize = false) {
 }
 
 function zoom(img){
+    currentImageIndex = 0;
     const zoomSlider = document.getElementById("fullsize");
     if (zoomSlider) {
         zoomSlider.style.display = "flex";

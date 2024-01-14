@@ -1,0 +1,38 @@
+#formation{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 10%;
+}
+
+#formation>span{
+    background-color: #6B8996;
+    padding: 20px;
+    transition: transform 0.3s ease; 
+}
+
+#formation>span:hover {
+    transform: scale(1.2);
+    background-color: #839A9B;
+}
+
+.arrow-1 {
+top: 385px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    color: #839A9B;
+    position: absolute;
+    z-index: -1;
+  }
+  .arrow-1:before {
+    content: "";
+    background: currentColor;
+    width:15px;
+    clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
+    animation: a1 4.5s infinite linear;
+  }
+  @keyframes a1 {
+    90%,100%{flex-grow: 1}
+  }
+  
+  

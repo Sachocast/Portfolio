@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/formation.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <script src="./js/slider.js"></script> 
+    <title>PortFolio</title>
 
 </head>
 
@@ -14,6 +17,7 @@
     <header>
         <h1>Portfolio de Sacha Castillejos</h1>
         <ul>
+            <li>presentation</li>
             <li>projets</li>
             <li>contact</li>
             <li>linkedIn</li>
@@ -23,13 +27,38 @@
 
 
     <main>
+        <section id="presentation">
+            <h2>Presentation</h2>
+            <p>Sacha Castillejos étudiant à la MIAGE de Nice Sophia Antipolis</p>
+            <h1>Formation</h1>
+            <div id="formation">
+                <div class="arrow-1"></div>
+                <span>
+                    <p>2021</p>
+                    <p>Bac Physique-Chimie NSI Maths complémentaires</p>
+                    <p>Mention assez bien</p>
+                    <a target="_blank" href="http://www.carnot-cannes.fr/">Lycée Carnot</a>
+                </span>
+                <span>
+                    <p>2021-2023</p>
+                    <p>BUT Informatique</p>
+                    <a target="_blank" href="https://iut.univ-cotedazur.fr/">IUT de Nice</a>
+                </span>
+                <span>
+                    <p>2023-2024</p>
+                    <p>Licence 3 MIAGE</p>
+                    <a target="_blank" href="https://univ-cotedazur.fr/miage">MIAGE de Nice Sophia Antipolis</a>
+                </span>
+            </div>
+        </section>
+
         <div id="fullsize">
             <button id="quit" onclick="quit()"><img src="./img/croix.png" alt="x"></button>
             <button class="buttonSlider" id="fullsizePrev">‹</button>
             <img src="" alt="img slider" class="slider-image" >
             <button class="buttonSlider" id="fullsizeNext">›</button>
         </div>
-        <div>
+        <section id="2021-2022">
             <h1>2021-2022</h1>
             <div id="attMstr">
                 <h2>Attaque de monstre</h2>
@@ -48,9 +77,9 @@
                     <button class="buttonSlider" onclick="nextImage('pkmn')">›</button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section id="2022-2023">
             <h1>2022-2023</h1>
             <div id="albums">
                 <h2>Faux site de vente d'albums</h2>
@@ -68,9 +97,9 @@
                     <button class="buttonSlider" onclick="nextImage('sw')">›</button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section id="2023-2024">
             <h1>2023-2024</h1>
             <div id="iww">
                 <h2>IWW</h2>
@@ -86,7 +115,7 @@
                 <h3>Site en html/css/js hébergeant 3 jeux</h3>
                 <h3>Jeux en babylon.js pour le Games On Web 2024</h3>
             </div>
-        </div>
+        </section>
 
     </main>
 
@@ -95,8 +124,6 @@
 
 
     </footer>
-
-   <script src="./js/index.js"></script> 
 
 </body>
 
