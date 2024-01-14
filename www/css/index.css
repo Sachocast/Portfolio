@@ -43,6 +43,7 @@ nav ul {
 .navA:hover,nav a img:hover {
     transform: scale(1.2);
     background-color: #28272A;
+    border-radius: 4px;
 }
 
 nav a img{
@@ -53,6 +54,7 @@ nav a img{
     object-fit: normal;
     cursor: pointer;
     padding: 10px;
+    background-color: transparent;
 }
 
 #navImg{

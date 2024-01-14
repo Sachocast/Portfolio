@@ -1,11 +1,11 @@
 
 img,video{
-    border: 1px solid #ddd;
     border-radius: 4px;
     padding: 20px;
     width: 600px;
     height: 270px;
     object-fit: scale-down;
+    background-color: #CAC3B8;
 }
 
 img{
@@ -25,6 +25,7 @@ img{
 }
 
 #fullsize{
+    border-radius: 4px;
     z-index: 999;
     display: none;
     top: 16%;
@@ -34,9 +35,8 @@ img{
     position: fixed;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #CAC3B8;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4); 
 }
 
 #fullsize>img{
@@ -44,13 +44,16 @@ img{
     height: 100%;
     border: 0;
     cursor: initial;
+    background-color: transparent;
 }
 
 #quit>img{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border: none;
     cursor: initial;
+    padding: 5px;
+    background-color: transparent;
 }
 
 #quit{
@@ -63,4 +66,25 @@ img{
 
 #quit:hover {
     background-color: red;
+}
+
+.buttonPrev{
+    margin-right: 10px;
+}
+
+.buttonNext{
+    margin-left: 10px;
+}
+
+.buttonPrev,.buttonNext{
+    border-radius: 100%;
+    border: none;
+    background-color: #839A9B;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+.buttonPrev:hover,.buttonNext:hover{
+    transform: scale(1.2);
+    background-color: #6B8996;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4); 
 }

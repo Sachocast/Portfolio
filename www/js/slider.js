@@ -21,7 +21,7 @@ const imagesSW = [
     "./img/figurineSW1.png",
     "./img/figurineSW2.png",
     "./img/figurineSW3.png",
-    "./img/VideoPromoBoutiqueSW.mp4"
+    "./img/figurineSW4.png"
 ]
 const imagesIWW = [
     "./img/IWW1.png",
@@ -64,43 +64,7 @@ function updateImage(idDiv) {
             currentImageElement.src = imagesAlbums[currentImageIndex];
             break;
         case 'sw':
-            if(currentImageIndex<3){
-                const image = document.createElement('img');
-                image.src = imagesSW[currentImageIndex];
-                image.alt = 'img star wars';
-                image.className = 'slider-image';
-                image.onclick = function() { zoom('sw');};
-                if(divFullsize.style.display=="flex"){
-                    const element = divFullsize.querySelectorAll('img')[1] 
-                    divFullsize.replaceChild(image, element);
-                } else{
-                    divFullsize = document.getElementById('sw');
-                    const sliderContainer = divFullsize.querySelector('.slider-container');
-                    var element = sliderContainer.querySelector('img') ?? sliderContainer.querySelector('video');
-                    sliderContainer.replaceChild(image, element);
-                }
-            }
-            if(currentImageIndex == 3){            
-                const video = document.createElement('video');
-                video.setAttribute('controls', 'true');
-                video.setAttribute('width', '250');
-                const sourceWebm = document.createElement('source');
-                sourceWebm.setAttribute('src', './img/VideoPromoBoutiqueSW.mp4');
-                sourceWebm.setAttribute('type', 'video/webm');
-                const sourceMp4 = document.createElement('source');
-                sourceMp4.setAttribute('src', './img/VideoPromoBoutiqueSW.mp4');
-                sourceMp4.setAttribute('type', 'video/mp4');
-                video.appendChild(sourceWebm);
-                video.appendChild(sourceMp4);
-                /*if(divFullsize.style.display=="flex"){
-                    
-                } else{*/
-                    divFullsize = document.getElementById('sw');
-                    const sliderContainer = divFullsize.querySelector('.slider-container');
-                    var element = sliderContainer.querySelector('img') ?? sliderContainer.querySelector('video');
-                    sliderContainer.replaceChild(video, element);
-                //}
-            }
+            currentImageElement.src = imagesSW[currentImageIndex];
             break;
         case 'iww':
             currentImageElement.src = imagesIWW[currentImageIndex];
@@ -124,9 +88,6 @@ function nextImage(idDiv,fullsize = false) {
             break;
         case 'sw':
             currentImageIndex = (currentImageIndex + 1) % imagesSW.length;
-            if(divFullsize.style.display == 'flex' && currentImageIndex == 3){
-                currentImageIndex = 0;
-            }
             break;
         case 'iww':
             currentImageIndex = (currentImageIndex + 1) % imagesIWW.length;
@@ -151,9 +112,6 @@ function prevImage(idDiv,fullsize = false) {
             break;
         case 'sw':
             currentImageIndex = (currentImageIndex - 1 + imagesSW.length) % imagesSW.length;
-            if(divFullsize.style.display == 'flex' && currentImageIndex == 3){
-                currentImageIndex = 2;
-            }
             break;
         case 'iww':
             currentImageIndex = (currentImageIndex - 1 + imagesIWW.length) % imagesIWW.length;
