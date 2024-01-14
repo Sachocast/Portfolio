@@ -10,8 +10,11 @@ img,video{
     width: 600px;
     height: 270px;
     object-fit: scale-down;
-    cursor: zoom-in;
-  }
+}
+
+img{
+    cursor : zoom-in;
+}
 
 .slider-container{
     display: flex;
