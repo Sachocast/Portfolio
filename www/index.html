@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="./css/formation.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/slider.js"></script> 
-    <title>PortFolio de Sacha Castillejos</title>
+    <title>PortFolio</title>
 
 </head>
 
@@ -17,11 +16,15 @@
 
     <header>
         <nav>
-            <h1>Portfolio de Sacha Castillejos</h1>
+            <h1 id="title">Portfolio de Sacha Castillejos</h1>
+            <div id="languageSection">
+                <a class="languageOption active" href="#" language="english">ENG</a>
+                <a class="languageOption" href="#" language="french">FR</a>
+            </div>
             <ul>
                 <li><a class="navA" href="#presentation">Presentation</a></li>
                 <li><a class="navA" href="#languages">Languages</a></li>
-                <li><a class="navA" href="#projets">Projets</a></li>
+                <li><a class="navA" id="navProjects" href="#projets">Projets</a></li>
                 <li><a class="navA" href="mailto:sacha.castillejos@etu.unice.fr">Contact</a></li>
             </ul>
             <ul>
@@ -77,7 +80,7 @@
        </section>
 
         <section id="projets">
-            <h2>Projets</h2>
+            <h2 id="H2Projects">Projets</h2>
             <div id="fullsize">
                 <button id="quit" onclick="quit()"><img src="./img/croix.png" alt="x"></button>
                 <button class="buttonSlider buttonPrev" id="fullsizePrev">‹</button>
@@ -87,17 +90,17 @@
             <section id="2021-2022">
                 <h2>2021-2022</h2>
                 <div id="attMstr">
-                    <h3>Attaque de monstre</h3>
+                    <h3 id="monsterAttack">Attaque De Monstre</h3>
                     <div class="slider-container">
                         <button class="buttonSlider buttonPrev" onclick="prevImage('attMstr')">‹</button>
                         <img src="./img/attaqueDeMstr1.png" alt="img attaque mstr" class="slider-image zoomable"  onclick="zoom('attMstr')">
                         <button class="buttonSlider buttonNext" onclick="nextImage('attMstr')">›</button>
                     </div>
                     <div class="description">
-                        <p>Ce projet a été fait en équipe de 2 et a été réalisé durant mon premier semestre de BUT informatique.
+                        <p id="monsterAttackDescr">Ce projet a été fait en équipe de 2 et a été réalisé durant mon premier semestre de BUT informatique.
                             Ce projet avait pour but la création d'un jeu où le personnage doit parvenir à la sortie en évitant les monstres sur une grille.
                             Le jeu est développé en C, il se sert de fichiers texte pour déterminer la configuration de la grille ainsi que les déplacements du personnage principal.</p>
-                        <p><a target="_blank" href="https://github.com/Sachocast/Attaque-de-monstres">Dépôt github</a></p>
+                        <p><a target="_blank" class="repository" href="https://github.com/Sachocast/Attaque-de-monstres">Dépôt github</a></p>
                     </div>
                 </div>
 
@@ -109,10 +112,10 @@
                         <button class="buttonSlider buttonNext" onclick="nextImage('pkmn')">›</button>
                     </div>
                     <div class="description">
-                        <p>Ce projet a été fait en équipe de 2 et a été réalisé lors de mon deuxième semestre de BUT Informatique.
+                        <p id="pokemonDescr">Ce projet a été fait en équipe de 2 et a été réalisé lors de mon deuxième semestre de BUT Informatique.
                             L'objectif de ce projet était de créer une simulation de combat Pokémon entre bots en Java.
                             Il y a deux types de bots: un bot aléatoire et un bot prudent.</p>
-                        <p><a target="_blank" href="https://github.com/Sachocast/pokae-pkmng1">Dépôt github</a></p>
+                        <p><a target="_blank" class="repository" href="https://github.com/Sachocast/pokae-pkmng1">Dépôt github</a></p>
                     </div>
                 </div>
             </section>
@@ -120,29 +123,29 @@
             <section id="2022-2023">
                 <h2>2022-2023</h2>
                 <div id="albums">
-                    <h3>Faux site de vente d'albums</h3>
+                    <h3 id="albumsWebSite">Faux Site De Vente D'Albums</h3>
                     <div class="slider-container">
                         <button class="buttonSlider buttonPrev" onclick="prevImage('albums')">‹</button>
                         <img src="./img/siteAlbums1.png" alt="img site" class="slider-image zoomable" onclick="zoom('albums')">
                         <button class="buttonSlider buttonNext" onclick="nextImage('albums')">›</button>
                     </div>
                     <div class="description">
-                        <p>Projet fait dans le cadre de ma deuxième année de BUT consistant à faire un faux site de vente d'albums en MVC et utilisant une base de données.</p>
-                        <p><a target="_blank" href="https://github.com/Sachocast/Projetphp">Dépôt github</a></p>
+                        <p id="albumsWebSiteDescr">Projet fait dans le cadre de ma deuxième année de BUT consistant à faire un faux site de vente d'albums en MVC et utilisant une base de données.</p>
+                        <p><a target="_blank" class="repository"href="https://github.com/Sachocast/Projetphp">Dépôt github</a></p>
                     </div>
                 </div>
                 <div id="sw">
-                    <h3>Figurine star wars</h3>
+                    <h3 id="SWFigurines">Figurines Star Wars</h3>
                     <div class="slider-container">
                         <button class="buttonSlider buttonPrev" onclick="prevImage('sw')">‹</button>
                         <img src="./img/figurineSW1.png" alt="img star wars" class="slider-image zoomable" onclick="zoom('sw')">
                         <button class="buttonSlider buttonNext" onclick="nextImage('sw')">›</button>
                     </div>
                     <div class="description">
-                        <p>Ce projet a été réalisé dans le cadre de mon quatrième semestre de BUT informatique.
+                        <p id="SWFigurinesDescr">Ce projet a été réalisé dans le cadre de mon quatrième semestre de BUT informatique.
                             L'objectif de ce projet était de créer une application Android faisant office de boutique.
                             Le projet devait être fait avec Android Studio, en java et en utilisant diverses technologies.</p>
-                        <p><a target="_blank" href="https://github.com/Sachocast/FigurinesStarWars">Dépôt github</a></p>
+                        <p><a target="_blank" class="repository" href="https://github.com/Sachocast/FigurinesStarWars">Dépôt github</a></p>
                     </div>
                 </div>
             </section>
@@ -157,15 +160,15 @@
                         <button class="buttonSlider buttonNext" onclick="nextImage('iww')">›</button>
                     </div>
                     <div class="description">
-                        <p>Ce projet a été fait en équipe de 4. Il avait pour but la reproduction du jeu de plateau It's a Wonderful World en Java dans le cadre d'un projet de développement tutoré en L3 MIASH à l'Université Nice Côte d'azur.</p>
-                        <p><a target="_blank" href="https://github.com/Sachocast/IWW">Dépôt github</a></p>
+                        <p id="IWWDescr">Ce projet a été fait en équipe de 4. Il avait pour but la reproduction du jeu de plateau It's a Wonderful World en Java dans le cadre d'un projet de développement tutoré en L3 MIAGE à l'Université Nice Côte d'azur.</p>
+                        <p><a target="_blank" class="repository" href="https://github.com/Sachocast/IWW">Dépôt github</a></p>
                     </div>
                 </div>
 
                 <div>
-                    <h2>Projets en cours</h2>
-                    <h3>Site en html/css/js hébergeant 3 jeux</h3>
-                    <h3>Jeux en babylon.js pour le Games On Web 2024</h3>
+                    <h2 id="currentProjects">Projets en cours</h2>
+                    <h3 id="threeGamesSite">Site en html/css/js hébergeant 3 jeux</h3>
+                    <h3 id="gamesOnWeb2024">Jeux en babylon.js pour le Games On Web 2024</h3>
                 </div>
             </section>
         </section>
@@ -178,7 +181,8 @@
         <p><a href="mailto:sacha.castillejos@etu.unice.fr">2024 Sacha Castillejos</a></p>
 
     </footer>
-
+    <script src="./js/slider.js"></script> 
+    <script src="./js/languages.js"></script> 
 </body>
 
 
