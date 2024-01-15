@@ -1,0 +1,100 @@
+/* Styles généraux pour les petits écrans (jusqu'à 768px) */
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 24px; /* Ajustez selon vos besoins */
+    }
+
+    #presentationSentence {
+        margin-left: 0.80em; /* Centrez le texte de présentation */
+    }
+
+    #presentation,#projets,#languages{
+        padding-top:9em;
+    }
+
+    #formation {
+        flex-direction: column;
+        align-items: center;
+        margin: 0; /* Ajustez selon vos besoins */
+    }
+
+    #formation>span {
+        margin-bottom: 20px; /* Espace entre les éléments de formation */
+    }
+
+    .arrow-1 {
+        display: none; /* Masquez la flèche pour les petits écrans */
+    }
+
+    nav {
+        padding: 5px; 
+    }
+
+    .navA:hover,nav a img:hover {
+        transform: scale(0,0);
+        background-color: transparent;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navA {
+        margin: 0;
+        padding: 0px;
+    }
+
+    #navImg {
+        justify-content: center;
+    }
+
+    #languagesIMG img,
+    #languagesIMG2 img {
+        width: 70%; /* Les images occupent 100% de la largeur */
+        height: auto; /* Hauteur automatique pour préserver les proportions */
+        margin: 10px 0; /* Espace entre les images */
+    }
+
+    #languagesIMG,
+    #languagesIMG2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img,
+    video {
+        width: 70%; /* Les images et vidéos occupent 100% de la largeur */
+        height: auto; /* Hauteur automatique pour préserver les proportions */
+    }
+
+    #fullsize {
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+    }
+
+    #fullsize>img {
+        width: 100%;
+    }
+
+    footer p {
+        margin-top: 5%;
+    }
+    
+    .buttonNext {
+        margin-top: 10px;
+    }
+
+    .buttonPrev {
+        margin-bottom: 10px;
+    }
+    
+}

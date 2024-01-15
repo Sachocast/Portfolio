@@ -26,7 +26,7 @@ img{
 
 #fullsize{
     border-radius: 4px;
-    z-index: 999;
+    z-index: 1000;
     display: none;
     top: 16%;
     left: 16%;
