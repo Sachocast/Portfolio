@@ -121,19 +121,21 @@ function prevImage(idDiv,fullsize = false) {
 }
 
 function zoom(img){
-    currentImageIndex = 0;
-    const zoomSlider = document.getElementById("fullsize");
-    if (zoomSlider) {
-        zoomSlider.style.display = "flex";
-        document.body.style.overflowY = "hidden";
-        removeCurrentImageId
-        addCurrentImageId("fullsize");
-        updateImage(img);
-        const prev = document.getElementById("fullsizePrev");
-        prev.setAttribute('onclick','prevImage('+'\'' +img+ '\',true' +')');        
-        const next = document.getElementById("fullsizeNext");
-        next.setAttribute('onclick','nextImage('+'\'' +img+ '\',true' +')');    
-    }
+    if (window.innerWidth > 768) {
+        currentImageIndex = 0;
+        const zoomSlider = document.getElementById("fullsize");
+        if (zoomSlider) {
+            zoomSlider.style.display = "flex";
+            document.body.style.overflowY = "hidden";
+            removeCurrentImageId
+            addCurrentImageId("fullsize");
+            updateImage(img);
+            const prev = document.getElementById("fullsizePrev");
+            prev.setAttribute('onclick','prevImage('+'\'' +img+ '\',true' +')');        
+            const next = document.getElementById("fullsizeNext");
+            next.setAttribute('onclick','nextImage('+'\'' +img+ '\',true' +')');    
+        }
+      }
 }
 
 function quit(){

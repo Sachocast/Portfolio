@@ -31,10 +31,7 @@
         padding: 5px; 
     }
 
-    .navA:hover,nav a img:hover {
-        transform: scale(0,0);
-        background-color: transparent;
-    }
+ 
 
     nav ul {
         flex-direction: column;
@@ -48,6 +45,7 @@
 
     #navImg {
         justify-content: center;
+        cursor: pointer;
     }
 
     #languagesIMG img,
@@ -70,8 +68,12 @@
 
     img,
     video {
-        width: 70%; /* Les images et vidéos occupent 100% de la largeur */
-        height: auto; /* Hauteur automatique pour préserver les proportions */
+        width: 70%; 
+        height: auto; 
+    }
+
+    .slider-image {
+        cursor: initial;
     }
 
     #fullsize {
