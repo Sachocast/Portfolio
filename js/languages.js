@@ -16,7 +16,8 @@ const data = {
         "IWWDescr": "This project was carried out in a team of 4, with the aim of reproducing the It's a Wonderful World board game in Java as part of a development project for the L3 MIAGE course at the Université Nice Côte d'Azur.",
         "currentProjects": "Current Projects",
         "threeGamesSite": "Site in html/css/js hosting 3 games",
-        "gamesOnWeb2024": "Babylon.js games for Games On Web 2024"
+        "gamesOnWeb2024": "Babylon.js games for Games On Web 2024",
+        "education":"Education"
     },
     "french":
     {
@@ -35,7 +36,8 @@ const data = {
         "IWWDescr": "Ce projet a été fait en équipe de 4. Il avait pour but la reproduction du jeu de plateau It's a Wonderful World en Java dans le cadre d'un projet de développement tutoré en L3 MIAGE à l'Université Nice Côte d'azur.",
         "currentProjects": "Projets en cours",
         "threeGamesSite": "Site en html/css/js hébergeant 3 jeux",
-        "gamesOnWeb2024": "Jeux en babylon.js pour le Games On Web 2024"
+        "gamesOnWeb2024": "Jeux en babylon.js pour le Games On Web 2024",
+        "education":"Formation"
     }
 };
 
@@ -57,6 +59,7 @@ const textIWWDescr = document.querySelector("#IWWDescr");
 const textCurrentProjects = document.querySelector("#currentProjects");
 const text3GamesSite = document.querySelector("#threeGamesSite");
 const textGamesOnWeb2024 = document.querySelector("#gamesOnWeb2024");
+const textEducation = document.querySelector("#education");
 
 
 buttons.forEach(button => {
@@ -84,5 +87,6 @@ buttons.forEach(button => {
         textCurrentProjects.textContent = data[attr].currentProjects;
         text3GamesSite.textContent = data[attr].threeGamesSite;
         textGamesOnWeb2024.textContent = data[attr].gamesOnWeb2024;
+        textEducation.textContent = data[attr].education;
     });
 });
