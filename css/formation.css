@@ -11,6 +11,10 @@
     border-radius: 4px;
 }
 
+#formation>span>p,#formation>span>a{
+    color: #28272A;
+}
+
 #formation>span:hover {
     transform: scale(1.2);
     background-color: #6B8996;
